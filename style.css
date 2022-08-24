@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6b9d0;
+}
+
+.container{
+    background-image: url(/img/cat2.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 500px;
+    width: 800px;
+    height: 700px;
+}
+
+.container .alarm-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 9%;
+    width: 410px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 10px 35px;
+    color: white;
+    margin: 3px;
+    padding: 3px;
+}
+
+.container .alarm-container img{
+    margin-top: 20px;
+    max-width: 125px;
+}
+
+.alarm-container h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px #00ffe11a;
+    color: rgb(245, 245, 245);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.container .content .alarm-controls {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.content.content.disable .alarm-controls {
+    opacity: .6;
+    pointer-events: none;
+}
+
+.container .content select {
+    margin: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(245, 245, 245);
+
+}
+
+.container .content select option {
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+}
+
+.container button {
+    width: 394px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 14px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #5dccbf;
+    color: #f5f5f5;
+}
+
