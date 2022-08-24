@@ -15,7 +15,7 @@ body, html{
 }
 
 .container{
-    background-image: url(/img/cat2.png);
+    background-image: url(/despertador-js-html-css/img/cat2.png);
     background-position: center;
     background-size: cover;
     margin-right: 500px;
